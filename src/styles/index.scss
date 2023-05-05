@@ -1,0 +1,25 @@
+@import 'global-styles';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 4%;
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: map-get($colors, primary-background);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
