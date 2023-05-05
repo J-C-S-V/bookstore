@@ -1,9 +1,14 @@
 // import { Routes, Route } from 'react-router-dom';
+import Navbar from './Navbar';
+import Form from './Form';
 
 function Categories() {
   return (
-    <div>
-      <h1>Categories</h1>
+    <div className="home">
+      <Navbar />
+      <div>Categories</div>
+      <hr />
+      <Form />
     </div>
   );
 }

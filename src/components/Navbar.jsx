@@ -9,12 +9,12 @@ function Navbar() {
       </a>
       <ul className="navbar__ul">
         <li className="navbar__li-1">
-          <a className="navbar__book" href="https://google.com">
+          <a className="navbar__book" href="/">
             BOOKS
           </a>
         </li>
         <li className="navbar__li-2">
-          <a className="navbar__categories" href="https://google.com">
+          <a className="navbar__categories" href="/categories">
             CATEGORIES
           </a>
         </li>
