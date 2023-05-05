@@ -1,0 +1,44 @@
+@import 'global-styles';
+
+.navbar {
+  font-size: 1.2rem;
+  background-color: map-get($colors, primary-white);
+  padding: 24px 4%;
+  border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  align-items: center;
+  grid-gap: 4rem;
+  gap: 4rem;
+}
+
+.navbar__a {
+  color: map-get($colors, primary-blue);
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.navbar__ul {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  flex-grow: 1;
+  gap: 2rem;
+  font-size: 0.8rem;
+  font-weight: 100;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 4px;
+}
+
+.navbar__categories {
+  color: map-get($colors, faded-text);
+}
+
+.navbar__button {
+  border-radius: 50%;
+  color: map-get($colors, primary-blue);
+  border: 1px solid map-get($colors, secondary-background);
+}
+
+.navbar__button:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,28 @@
+@import 'global-styles';
+
+.form__h2 {
+  color: map-get($colors, faded-text);
+  margin-left: 2.3rem;
+}
+
+.form__form {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form__input,
+.form__options,
+.form__button {
+  padding: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid map-get($colors, faded-text);
+}
+
+.form__input {
+  min-width: 20rem;
+}
+
+.form__button {
+  background-color: map-get($colors, primary-blue);
+  color: map-get($colors, primary-white);
+}
