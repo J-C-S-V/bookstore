@@ -2,11 +2,11 @@
 
 <div align="center">
   <a href="https://unsplash.com/photos/04X1Yp9hNH8">
-  <img src="https://images.unsplash.com/photo-1661956600684-97d3a4320e45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="logo" width="340"  height="auto" /><br/>
+  <img src="https://user-images.githubusercontent.com/109441277/236522298-92f07e0d-826b-4291-8fd3-d8f5b4b8bca9.png" alt="logo" width="540"  height="auto" /><br/>
   </a>
 </div>
 
-# To do list
+# Bookstore
 
 # 📗 Table of Contents
 
@@ -28,7 +28,7 @@
 
 # 📖 About the project <a name="about-project"></a>
 
-This is a project to create lists for a day. This was build using SPA (Single Page Application), JavaScript ES6, HTML5, CSS3, mobile-first approach. local storage API and DOM manipulation.
+This is a React-based bookstore project that involves creating a visually appealing user interface that enables users to browse, search, and purchase books online. This would require the use of various front-end technologies, such as React, to build the UI components such as navigation bars, search bars, and product listings. To create a seamless user experience, the project is responsive and optimized for different screen sizes, making use of HTML5, CSS3, React, and JavaScript to achieve this.
 
 ## 🛠 Built with <a name="built-with"></a>
 
@@ -40,7 +40,7 @@ This is a project to create lists for a day. This was build using SPA (Single Pa
     <li><a href="#">JavaScript ES6</a></li>
   </ul>
   <ul>
-    <li><a href="#">Webpack</a></li>
+    <li><a href="#">React</a></li>
   </ul>
   <ul>
     <li><a href="#">HTML5</a></li>
@@ -58,7 +58,7 @@ This is a project to create lists for a day. This was build using SPA (Single Pa
     <li><a href="#">Jest</a></li>
   </ul>
   <ul>
-    <li><a href="#">Jest</a></li>
+    <li><a href="#">Webpack</a></li>
   </ul>
 </details>
 
@@ -72,7 +72,9 @@ This is a project to create lists for a day. This was build using SPA (Single Pa
 
 ## 🚀 Live demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://j-c-s-v.github.io/webpack-to-do-list/)
+Under construction.
+
+<!-- - [Live Demo Link](https://j-c-s-v.github.io/webpack-to-do-list/) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,7 +86,7 @@ To get a local copy up and running, follow these steps.
 
 Clone this repository to your desired folder:
 
-`git clone` https://github.com/J-C-S-V/webpack-to-do-list-
+`git clone` https://github.com/J-C-S-V/bookstore
 
 ### Install
 
