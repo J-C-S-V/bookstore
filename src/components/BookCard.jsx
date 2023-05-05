@@ -40,6 +40,6 @@ function BookCard() {
       </aside>
     </article>
   );
-};
+}
 
 export default BookCard;

@@ -22,6 +22,6 @@ function Form() {
       </form>
     </section>
   );
-};
+}
 
 export default Form;

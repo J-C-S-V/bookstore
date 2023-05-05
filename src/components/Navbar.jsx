@@ -33,6 +33,6 @@ function Navbar() {
       </button>
     </nav>
   );
-};
+}
 
 export default Navbar;

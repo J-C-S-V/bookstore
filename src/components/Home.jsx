@@ -12,10 +12,10 @@ function Home() {
         <BookCard />
         <BookCard />
       </div>
-      <hr/>
+      <hr />
       <Form />
     </div>
   );
-};
+}
 
 export default Home;
