@@ -1,6 +1,6 @@
 // import { Routes, Route } from 'react-router-dom';
 
-const Categories = () => {
+function Categories() {
   return (
     <div>
       <h1>Categories</h1>

@@ -1,5 +1,6 @@
 import '../styles/Form.scss';
-const Form = () => {
+
+function Form() {
   return (
     <section className="form">
       <h2 className="form__h2">ADD NEW BOOK</h2>
@@ -15,7 +16,7 @@ const Form = () => {
           <option value="Science Fiction">Science Fiction</option>
           <option value="Economy">Economy</option>
         </select>
-        <button class="form__button" type="submit">
+        <button className="form__button" type="submit">
           ADD BOOK
         </button>
       </form>

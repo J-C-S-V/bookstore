@@ -1,6 +1,7 @@
 // import { Routes, Route } from 'react-router-dom';
 import '../styles/Navbar.scss';
-const Navbar = () => {
+
+function Navbar() {
   return (
     <nav className="navbar">
       <a className="navbar__a" href="https://google.com">

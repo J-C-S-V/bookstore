@@ -3,7 +3,7 @@ import BookCard from './BookCard';
 import Form from './Form';
 import '../styles/Home.scss';
 
-const Home = () => {
+function Home() {
   return (
     <div className="home">
       <Navbar />
@@ -12,7 +12,7 @@ const Home = () => {
         <BookCard />
         <BookCard />
       </div>
-      <hr></hr>
+      <hr/>
       <Form />
     </div>
   );

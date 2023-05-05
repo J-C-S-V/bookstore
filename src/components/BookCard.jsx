@@ -1,5 +1,6 @@
 import '../styles/BookCard.scss';
-const BookCard = () => {
+
+function BookCard() {
   return (
     <article className="book">
       <div className="book__left">
