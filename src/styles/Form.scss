@@ -13,7 +13,7 @@
 .form__input,
 .form__options,
 .form__button {
-  padding: 1rem;
+  padding: 0.8rem;
   border-radius: 0.3rem;
   border: 1px solid map-get($colors, faded-text);
 }
@@ -25,4 +25,11 @@
 .form__button {
   background-color: map-get($colors, primary-blue);
   color: map-get($colors, primary-white);
+}
+
+.form__button:hover {
+  cursor: pointer;
+  background-color: map-get($colors, primary-white);
+  color: map-get($colors, primary-blue);
+  border: 1px solid map-get($colors, primary-blue);
 }

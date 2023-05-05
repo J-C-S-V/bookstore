@@ -2,11 +2,10 @@
 
 .home {
   // background-color: map-get($colors, secondary-background);
-  background-color: yellow;
   min-height: 50rem;
 }
 
 .books-wapper {
-  background-color: red;
+  background-color: map-get($colors, secondary-background);
   min-height: 10rem;
 }

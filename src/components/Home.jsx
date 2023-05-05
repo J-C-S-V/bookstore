@@ -8,40 +8,12 @@ const Home = () => {
     <div className="home">
       <Navbar />
       <div className="books-wapper">
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
-
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
-        <div>Un libro lol</div>
+        <BookCard />
+        <BookCard />
+        <BookCard />
       </div>
       <hr></hr>
       <Form />
-
-      {/* <BookCard /> */}
     </div>
   );
 };

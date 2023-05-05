@@ -1,45 +1,60 @@
 @import 'global-styles';
 
 .book {
-  font-size: 1.2rem;
-  background-color: map-get($colors, primary-white);
-  padding: 24px 4%;
-  border-bottom: 1px solid #e8e8e8;
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
   align-items: center;
-  grid-gap: 4rem;
-  gap: 4rem;
-  padding: 4%;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 3px;
+  background-color: map-get($colors, primary-white);
+  // border: 3px solid blue;
 }
 
-.book__a {
-  color: map-get($colors, primary-blue);
-  font-weight: 600;
-  font-size: 1.8rem;
-}
-
-.book__ul {
+.book__left {
   display: flex;
-  justify-content: flex-start;
-  width: 50%;
-  flex-grow: 1;
-  gap: 2rem;
-  font-size: 0.8rem;
-  font-weight: 100;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 4px;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.book__categories {
-  color: map-get($colors, faded-text);
+.book__left-ul {
+  display: flex;
+  justify-content: space-between;
 }
 
-.book__button {
-  border-radius: 50%;
-  color: map-get($colors, primary-blue);
-  border: 1px solid map-get($colors, secondary-background);
+.book__left-circle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 0.1;
 }
 
-.book__button:hover {
+.book__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.book__right-button {
+  background-color: map-get($colors, primary-blue);
+  color: map-get($colors, primary-white);
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  border: 1px solid map-get($colors, faded-text);
+}
+
+.book__right-button:hover {
   cursor: pointer;
+  background-color: map-get($colors, primary-white);
+  color: map-get($colors, primary-blue);
+  border: 1px solid map-get($colors, primary-blue);
+}
+
+.book__left-h3,
+.book__left-p,
+.book__left-li,
+.book__left-p-2,
+.book__right-h3 {
+  color: map-get($colors, faded-text);
 }
