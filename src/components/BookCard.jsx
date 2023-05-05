@@ -11,7 +11,7 @@ function Book({ title, author }) {
           <p className="book__left-p">{author}</p>
           <ul className="book__left-ul">
             <li className="book__left-li">Comments</li>
-            <li className="book__left-li">Remove</li>
+            <li className="book__left-li"><button type="button">Remove</button></li>
             <li className="book__left-li">Edit</li>
           </ul>
         </div>
