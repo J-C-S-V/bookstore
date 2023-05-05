@@ -9,8 +9,6 @@ function Home() {
       <Navbar />
       <div className="books-wapper">
         <BookCard />
-        <BookCard />
-        <BookCard />
       </div>
       <hr />
       <Form />

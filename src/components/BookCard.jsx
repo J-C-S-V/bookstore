@@ -1,13 +1,14 @@
+import PropTypes from 'prop-types';
 import '../styles/BookCard.scss';
 
-function BookCard() {
+function Book({ title, author }) {
   return (
     <article className="book">
       <div className="book__left">
         <div className="book__left-description">
           <h3 className="book__left-h3">Action</h3>
-          <h2 className="book__left-h2">The Hunger Games</h2>
-          <p className="book__left-p">Suzanne Collins</p>
+          <h2 className="book__left-h2">{title}</h2>
+          <p className="book__left-p">{author}</p>
           <ul className="book__left-ul">
             <li className="book__left-li">Comments</li>
             <li className="book__left-li">Remove</li>
@@ -42,4 +43,25 @@ function BookCard() {
   );
 }
 
-export default BookCard;
+function BookList() {
+  const booksDescription = [
+    { title: 'The Hunger Games', author: 'Suzanne Collins' },
+    { title: 'To Kill a Mockingbird', author: 'Harper Lee' },
+    { title: 'The Catcher in the Rye', author: 'J.D. Salinger' },
+  ];
+
+  return (
+    <div className="book-list">
+      {booksDescription.map((book) => (
+        <Book key={book.title} title={book.title} author={book.author} />
+      ))}
+    </div>
+  );
+}
+
+Book.propTypes = {
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+};
+
+export default BookList;
