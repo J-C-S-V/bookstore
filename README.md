@@ -1,100 +1,107 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <a href="https://unsplash.com/photos/04X1Yp9hNH8">
-  <img src="https://images.unsplash.com/photo-1661956600684-97d3a4320e45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="logo" width="340"  height="auto" /><br/>
-  </a>
+  <h3><b>Bookstore</b></h3>
 </div>
 
-# To do list
+<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
-- [📖 About the project](#about-project)
-  - [🛠 Built with](#built-with)
-    - [Tech stack](#tech-stack)
-    - [Key features](#key-features)
-  - [🚀 Live demo](#live-demo)
-- [💻 Getting started](#getting-started)
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
   - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
-- [👷‍♂️ Author](#authors)
-- [🔭 Future features](#future-features)
+   - [Run tests](#run-tests)
+  - [Deployment](#deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
+<!-- PROJECT DESCRIPTION -->
+
 # 📖 About the project <a name="about-project"></a>
 
-This is a project to create lists for a day. This was build using SPA (Single Page Application), JavaScript ES6, HTML5, CSS3, mobile-first approach. local storage API and DOM manipulation.
+This is a React-based bookstore project that involves creating a visually appealing user interface that enables users to browse, search, and purchase books online. This would require the use of various front-end technologies, such as React, to build the UI components such as navigation bars, search bars, and product listings. To create a seamless user experience, the project is responsive and optimized for different screen sizes, making use of HTML5, CSS3, React, and JavaScript to achieve this.
 
-## 🛠 Built with <a name="built-with"></a>
+## 🛠 Built With <a name="built-with"></a> 
+HTML, CSS, React and JavaScript
 
-### Tech stack <a name="tech-stack"></a>
+### Tech Stack <a name="tech-stack"></a> 
+HTML, CSS, and React
 
-<details>
-  <summary>Languages and technologies</summary><br>
-  <ul>
-    <li><a href="#">JavaScript ES6</a></li>
-  </ul>
-  <ul>
-    <li><a href="#">Webpack</a></li>
-  </ul>
-  <ul>
-    <li><a href="#">HTML5</a></li>
-  </ul>
-  <ul>
-    <li><a href="#">CSS3</a></li>
-  </ul>
-  <ul>
-    <li><a href="#">Git</a></li>
-  </ul>
-  <ul>
-    <li><a href="#">SASS</a></li>
-  </ul>
-  <ul>
-    <li><a href="#">Jest</a></li>
-  </ul>
-  <ul>
-    <li><a href="#">Jest</a></li>
-  </ul>
-</details>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- Features -->
 
-### Key features <a name="key-features"></a>
+### Key Features <a name="key-features"></a>
 
-- **[Easy navigation]**
-- **[Personalized product]**
-- **[Mobile first]**
+- Allows users to buy books
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live demo <a name="live-demo"></a>
+### Live Demo
+A live demo of this project will soon be available on netlify and github pages.
 
-- [Live Demo Link](https://j-c-s-v.github.io/webpack-to-do-list/)
+<!-- GETTING STARTED -->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 💻 Getting started <a name="getting-started"></a>
+## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
+  - Clone the repository
+  - install nodejs 
+  - Run it using npm start
+
+### Prerequisites
+
+In order to run this project you need:
+    - A web browser
+    - nodejs installed
 
 ### Setup
 
-Clone this repository to your desired folder:
-
-`git clone` https://github.com/J-C-S-V/webpack-to-do-list-
+    - Clone this repository to your desired folder.
+            -cd my-folder
+            -git clone https://github.com/J-C-S-V/bookstore
 
 ### Install
 
-`npm install`
+Install this project with:
+    - npm install to install local dependencies
 
 ### Usage
 
-`npm run build`
+To run the project :
+    npm start
 
-`npm run start`
+### Run tests
+
+To run tests, run the following command:
+
+```sh
+Run "npx stylelint "**/*.{css,scss}" --fix " to fix linters 
+```
+
+
+### Deployment
+
+You can deploy this project using:
+
+  -GitHub pages
+  -Netlify
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+  
+<!-- AUTHORS -->
 
 ## 👷‍♂️ Author <a name="authors"></a>
 
@@ -106,13 +113,16 @@ Clone this repository to your desired folder:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🔭 Future features <a name="future-features"></a>
+<!-- FUTURE FEATURES -->
 
-- [ ] **[Payment]**
-- [ ] **[Footer]**
-- [ ] **[API integration]**
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Add books to the store**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -122,20 +132,28 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- SUPPORT -->
+
 ## ⭐️ Show your support <a name="support"></a>
 
-If you get inspired by this project you can give me a star 🙌
+If you like this project, please star it and send me a message on LinkedIn.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse
+I would like to thank Microverse for providing invaluable resources to study React.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](https://github.com/J-C-S-V/Portfolio-setup-and-mobile-first/blob/main/license.md) licensed.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

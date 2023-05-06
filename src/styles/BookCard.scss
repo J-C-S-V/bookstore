@@ -1,0 +1,60 @@
+@import 'global-styles';
+
+.book {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 3px;
+  background-color: map-get($colors, primary-white);
+  // border: 3px solid blue;
+}
+
+.book__left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.book__left-ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book__left-circle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 0.1;
+}
+
+.book__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.book__right-button {
+  background-color: map-get($colors, primary-blue);
+  color: map-get($colors, primary-white);
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  border: 1px solid map-get($colors, faded-text);
+}
+
+.book__right-button:hover {
+  cursor: pointer;
+  background-color: map-get($colors, primary-white);
+  color: map-get($colors, primary-blue);
+  border: 1px solid map-get($colors, primary-blue);
+}
+
+.book__left-h3,
+.book__left-p,
+.book__left-li,
+.book__left-p-2,
+.book__right-h3 {
+  color: map-get($colors, faded-text);
+}
