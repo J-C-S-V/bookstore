@@ -1,14 +1,14 @@
-// import { Routes, Route } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import Navbar from './Navbar';
-import Form from './Form';
 
 function Categories() {
+  const status = useSelector((state) => state.categories.status);
+
   return (
     <div className="home">
       <Navbar />
-      <div>Categories</div>
+      <div className="categories">{status}</div>
       <hr />
-      <Form />
     </div>
   );
 }
