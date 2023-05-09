@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+// import { useSelector, useDispatch } from 'react-redux';
+// import { addBook } from '../redux/books/booksSlice';
 import '../styles/BookCard.scss';
 
 function BookList() {
@@ -21,6 +23,8 @@ function BookList() {
 }
 
 function Book({ title, author }) {
+  // const statuss = useSelector((state) => state.books.state);
+  // const dispatch = useDispatch();
   return (
     <article className="book">
       <div className="book__left">
@@ -56,6 +60,8 @@ function Book({ title, author }) {
       <aside className="book__right">
         <h3 className="book__right-h3">CURRENT CHAPTER</h3>
         <h3 className="book__right-h3-2">Chapter 17</h3>
+        {/* <button onClick={() => dispatch(kaddBook())}
+        className="book__right-button" type="button"> */}
         <button className="book__right-button" type="button">
           UPDATE PROGRESS
         </button>
