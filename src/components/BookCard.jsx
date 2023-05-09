@@ -4,20 +4,20 @@ import PropTypes from 'prop-types';
 import '../styles/BookCard.scss';
 
 function BookList() {
-  const booksDescription = [
-    { title: 'The Hunger Games', author: 'Suzanne Collins' },
-    { title: 'To Kill a Mockingbird', author: 'Harper Lee' },
-    { title: 'The Catcher in the Rye', author: 'J.D. Salinger' },
-  ];
+  // const booksDescription = [
+  //   { title: 'The Hunger Games', author: 'Suzanne Collins' },
+  //   { title: 'To Kill a Mockingbird', author: 'Harper Lee' },
+  //   { title: 'The Catcher in the Rye', author: 'J.D. Salinger' },
+  // ];
 
   return (
     <div className="book-list">
       {/* {booksDescription.map((book) => (
         <Book key={book.title} title={book.title} author={book.author} />
       ))} */}
-      <Book title={booksDescription[0].title} author={booksDescription[0].author} />
+      {/* <Book title={booksDescription[0].title} author={booksDescription[0].author} />
       <Book title={booksDescription[1].title} author={booksDescription[1].author} />
-      <Book title={booksDescription[2].title} author={booksDescription[2].author} />
+      <Book title={booksDescription[2].title} author={booksDescription[2].author} /> */}
     </div>
   );
 }
