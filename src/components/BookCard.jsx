@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 // import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 // import { addBook } from '../redux/books/booksSlice';
 import '../styles/BookCard.scss';
 
@@ -18,18 +19,25 @@ function BookList() {
       {/* <Book title={booksDescription[0].title} author={booksDescription[0].author} />
       <Book title={booksDescription[1].title} author={booksDescription[1].author} />
       <Book title={booksDescription[2].title} author={booksDescription[2].author} /> */}
+      <Book />
     </div>
   );
 }
 
-function Book({ title, author }) {
+function Book({ title, author, category }) {
   // const statuss = useSelector((state) => state.books.state);
+  // const books = useSelector((state) => state.books);
+  const bookCount = useSelector((state) => state.books.length);
   // const dispatch = useDispatch();
   return (
     <article className="book">
       <div className="book__left">
         <div className="book__left-description">
-          <h3 className="book__left-h3">Action</h3>
+          <div>
+            This is it
+            {bookCount}
+          </div>
+          <h3 className="book__left-h3">{category}</h3>
           <h2 className="book__left-h2">{title}</h2>
           <p className="book__left-p">{author}</p>
           <ul className="book__left-ul">
@@ -73,6 +81,7 @@ function Book({ title, author }) {
 Book.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
 };
 
 export default BookList;
