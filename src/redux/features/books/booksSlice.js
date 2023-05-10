@@ -27,8 +27,13 @@ const booksSlice = createSlice({
   name: 'books',
   initialState,
   reducers: {
-    addBook: (state) => {
-      state.books.push('hola');
+    addBook: (state, action) => {
+      state.books.push({
+        item_id: Math.random().toString(36),
+        title: action.payload,
+        author: 'J.R.R. Tolkien',
+        category: 'Fiction',
+      });
     },
     removeBook: (state, action) => {
       state.books = state.books.filter(
@@ -37,8 +42,6 @@ const booksSlice = createSlice({
     },
   },
 });
-
-console.log(booksSlice);
 
 export const { addBook, removeBook } = booksSlice.actions;
 
