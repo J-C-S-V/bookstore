@@ -1,49 +1,40 @@
 import PropTypes from 'prop-types';
-// import { useSelector, useDispatch } from 'react-redux';
-import { useSelector } from 'react-redux';
-// import { addBook } from '../redux/books/booksSlice';
+import { useSelector, useDispatch } from 'react-redux';
+import { removeBook } from '../redux/features/books/booksSlice';
 import '../styles/BookCard.scss';
 
 function BookList() {
-  // const booksDescription = [
-  //   { title: 'The Hunger Games', author: 'Suzanne Collins' },
-  //   { title: 'To Kill a Mockingbird', author: 'Harper Lee' },
-  //   { title: 'The Catcher in the Rye', author: 'J.D. Salinger' },
-  // ];
-
+  const { books } = useSelector((state) => state.books);
   return (
     <div className="book-list">
-      {/* {booksDescription.map((book) => (
-        <Book key={book.title} title={book.title} author={book.author} />
-      ))} */}
-      {/* <Book title={booksDescription[0].title} author={booksDescription[0].author} />
-      <Book title={booksDescription[1].title} author={booksDescription[1].author} />
-      <Book title={booksDescription[2].title} author={booksDescription[2].author} /> */}
-      <Book />
+      {books.map((book) => (
+        <Book key={book.item_id} title={book.title} author={book.author} category={book.category} />
+      ))}
     </div>
   );
 }
 
-function Book({ title, author, category }) {
-  // const statuss = useSelector((state) => state.books.state);
-  // const books = useSelector((state) => state.books);
-  const bookCount = useSelector((state) => state.books.length);
-  // const dispatch = useDispatch();
+function Book({
+  title,
+  author,
+  category,
+}) {
+  const dispatch = useDispatch();
+  const { books } = useSelector((state) => state.books);
+  const key = books.find((book) => book.title === title).item_id;
   return (
     <article className="book">
       <div className="book__left">
         <div className="book__left-description">
-          <div>
-            This is it
-            {bookCount}
-          </div>
           <h3 className="book__left-h3">{category}</h3>
           <h2 className="book__left-h2">{title}</h2>
           <p className="book__left-p">{author}</p>
           <ul className="book__left-ul">
             <li className="book__left-li">Comments</li>
             <li className="book__left-li">
-              <button type="button">Remove</button>
+              <button type="button" onClick={() => dispatch(removeBook(key))}>
+                Remove
+              </button>
             </li>
             <li className="book__left-li">Edit</li>
           </ul>
@@ -68,8 +59,6 @@ function Book({ title, author, category }) {
       <aside className="book__right">
         <h3 className="book__right-h3">CURRENT CHAPTER</h3>
         <h3 className="book__right-h3-2">Chapter 17</h3>
-        {/* <button onClick={() => dispatch(kaddBook())}
-        className="book__right-button" type="button"> */}
         <button className="book__right-button" type="button">
           UPDATE PROGRESS
         </button>
