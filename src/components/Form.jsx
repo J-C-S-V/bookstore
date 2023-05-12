@@ -10,12 +10,10 @@ function Form() {
 
   const handleTitleChange = (e) => {
     setTitle(e.target.value);
-    // console.log('title');
   };
 
   const handleAuthorChange = (e) => {
     setAuthor(e.target.value);
-    // console.log('author');
   };
 
   return (
