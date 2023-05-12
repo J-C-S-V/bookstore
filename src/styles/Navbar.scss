@@ -24,7 +24,7 @@
   flex-grow: 1;
   gap: 2rem;
   font-size: 0.8rem;
-  font-weight: 100;
+  font-weight: 700;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 4px;
 }
@@ -41,4 +41,8 @@
 
 .navbar__button:hover {
   cursor: pointer;
+}
+
+.navbar__book {
+  font-weight: 800;
 }

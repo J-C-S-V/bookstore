@@ -47,18 +47,19 @@ function Book({
           <h3 className="book__left-h3">{category}</h3>
           <h2 className="book__left-h2">{title}</h2>
           <p className="book__left-p">{author}</p>
-          <ul className="book__left-ul">
-            <li className="book__left-li">Comments</li>
-            <li className="book__left-li">
-              <button type="button" onClick={() => dispatch(deleteBookAsync(key))}>
-                Remove
-              </button>
-            </li>
-            <li className="book__left-li">Edit</li>
-          </ul>
+          <div className="book__left-buttons">
+            <button type="button" className="book__left-button">Comments</button>
+            <div className="book__left-vertical" />
+            <button className="book__left-button" type="button" onClick={() => dispatch(deleteBookAsync(key))}>
+              Remove
+            </button>
+            <div className="book__left-vertical" />
+            <button type="button" className="book__left-button">Edit</button>
+          </div>
         </div>
-        <div className="book__left-circle">
-          <svg
+        <div className="book__left-circle-container">
+          <div className="book__left-circle" />
+          {/* <svg
             className="book__left-svg"
             xmlns="http://www.w3.org/2000/svg"
             width="56"
@@ -67,7 +68,7 @@ function Book({
             viewBox="0 0 16 16"
           >
             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-          </svg>
+          </svg> */}
           <div className="book__left-percentage">
             <h2 className="book__left-h2-2">64%</h2>
             <p className="book__left-p-2">Completed</p>
