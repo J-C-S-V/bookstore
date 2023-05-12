@@ -1,4 +1,3 @@
-// import { Routes, Route } from 'react-router-dom';
 import '../styles/Navbar.scss';
 
 function Navbar() {

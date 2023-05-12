@@ -1,10 +1,28 @@
 import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from 'react-redux';
-import { removeBook } from '../redux/features/books/booksSlice';
+import { useEffect } from 'react';
+import { getBooks, deleteBookAsync } from '../redux/features/books/booksSlice';
 import '../styles/BookCard.scss';
 
 function BookList() {
-  const { books } = useSelector((state) => state.books);
+  const { books, isLoading, error } = useSelector((state) => state.books);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getBooks());
+  }, [dispatch]);
+
+  if (isLoading) {
+    return (
+      <h3>Loading</h3>
+    );
+  }
+
+  if (error) {
+    return (
+      <h3>{error}</h3>
+    );
+  }
+
   return (
     <div className="book-list">
       {books.map((book) => (
@@ -32,7 +50,7 @@ function Book({
           <ul className="book__left-ul">
             <li className="book__left-li">Comments</li>
             <li className="book__left-li">
-              <button type="button" onClick={() => dispatch(removeBook(key))}>
+              <button type="button" onClick={() => dispatch(deleteBookAsync(key))}>
                 Remove
               </button>
             </li>
