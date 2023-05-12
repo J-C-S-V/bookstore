@@ -22,14 +22,14 @@ function Form() {
       <form className="form__form">
         <input
           type="text"
-          className="form__input"
+          className="form__input form__input--title"
           id="title"
           placeholder="Book title"
           onChange={handleTitleChange}
         />
         <input
           type="text"
-          className="form__input"
+          className="form__input form__input--author"
           id="author"
           placeholder="Book author"
           onChange={handleAuthorChange}

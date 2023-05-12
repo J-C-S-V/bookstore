@@ -7,7 +7,6 @@ hr {
 .form {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
   margin: 1rem;
 }
 
@@ -32,9 +31,14 @@ hr {
   width: 15rem;
 }
 
+.form__input--title {
+  width: 42rem;
+}
+
 .form__button {
   background-color: map-get($colors, primary-blue);
   color: map-get($colors, primary-white);
+  width: 24%;
 }
 
 .form__button:hover {
