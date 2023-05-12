@@ -17,12 +17,13 @@
   align-items: center;
 }
 
-.book__left-ul {
+.book__left-buttons {
   display: flex;
   justify-content: space-between;
+  padding: 1rem 0;
 }
 
-.book__left-circle {
+.book__left-circle-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -38,7 +39,7 @@
 .book__right-button {
   background-color: map-get($colors, primary-blue);
   color: map-get($colors, primary-white);
-  padding: 0.8rem;
+  padding: 0.5rem 0.8rem;
   border-radius: 0.3rem;
   border: 1px solid map-get($colors, faded-text);
 }
@@ -52,8 +53,64 @@
 
 .book__left-h3,
 .book__left-p,
-.book__left-li,
+.book__left-button,
 .book__left-p-2,
 .book__right-h3 {
   color: map-get($colors, faded-text);
+}
+
+.book__left-button {
+  border: none;
+  background-color: map-get($colors, primary-white);
+  color: map-get($colors, secondary-blue);
+  font-family: $primary-font;
+  font-weight: 100;
+}
+
+.book__left-button:hover {
+  cursor: pointer;
+  color: map-get($colors, primary-black);
+}
+
+.book__left-vertical {
+  width: .125rem;
+  height: 1.5rem;
+  background-color: #e8e8e8;
+  margin: 0 1rem;
+}
+
+.book__left-percentage > * {
+  padding: 0 1rem;
+  font-size: 1rem;
+  font-weight: 100;
+  font-family: m;
+}
+
+.book__left-circle {
+  border-radius: 50%;
+  width: 4.25rem;
+  height: 4.25rem;
+  border: 5px solid #307bbe;
+  border-left-color: #e8e8e8;
+  transform: rotate(45deg);
+}
+
+.book__left-description {
+  font-size: 0.8rem;
+}
+
+.book__left-description > * {
+  margin: 0.5rem 0;
+}
+
+.book__right-h3-2 {
+  font-weight: 100;
+}
+
+.book__right > * {
+  margin: 0.5rem 0;
+}
+
+.book__left-h2-2 {
+  font-size: 1.5rem;
 }

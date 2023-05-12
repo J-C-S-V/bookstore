@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto+Slab:wght@500&display=swap');
+
 $colors: (
   primary-white: #fff,
   primary-blue: #0290ff,
+  secondary-blue: #4386bf,
   primary-background: #f3f4f8,
   secondary-background: #fafafa,
+  primary-black: #121212,
   faded-text: #888,
 );
+
+$primary-font: 'Roboto slab', sans-serif;
+$secondary-font: 'Montserrat', sans-serif;
+
