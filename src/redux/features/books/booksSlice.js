@@ -11,6 +11,7 @@ export const getBooks = createAsyncThunk('books/getBooks', async () => {
     ...item[1][0],
     item_id: item[0],
   }));
+  // console.log('get', books);
   return books;
 });
 
@@ -20,7 +21,7 @@ export const addBook = createAsyncThunk('books/addBook', async (book) => {
   } catch (error) {
     throw new Error(error);
   }
-  console.log('post', book);
+  // console.log('post', book);
   return book;
 });
 
@@ -30,6 +31,7 @@ export const deleteBookAsync = createAsyncThunk('books/removeBook', async (id) =
   } catch (error) {
     throw new Error(error);
   }
+  // console.log('delete', id);
   return id;
 });
 

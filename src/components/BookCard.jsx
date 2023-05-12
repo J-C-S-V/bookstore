@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { getBooks, removeBook } from '../redux/features/books/booksSlice';
+import { getBooks, deleteBookAsync } from '../redux/features/books/booksSlice';
 import '../styles/BookCard.scss';
 
 function BookList() {
@@ -50,7 +50,7 @@ function Book({
           <ul className="book__left-ul">
             <li className="book__left-li">Comments</li>
             <li className="book__left-li">
-              <button type="button" onClick={() => dispatch(removeBook(key))}>
+              <button type="button" onClick={() => dispatch(deleteBookAsync(key))}>
                 Remove
               </button>
             </li>
