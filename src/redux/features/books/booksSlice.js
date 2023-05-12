@@ -24,24 +24,14 @@ export const addBook = createAsyncThunk('books/addBook', async (book) => {
   return book;
 });
 
-// export const deleteBookAsync = createAsyncThunk(
-//   'books/removeBook',
-//   async (id) => {
-//     try {
-//       await axios.delete(`${url}${urlId}/books/${id}`);
-//     } catch (error) {
-//       throw new Error(error);
-//     }
-//     return id;
-//   },
-// );
-
-// {
-//   item_id: 'item1',
-//   title: 'The Great Gatsby',
-//   author: 'John Smith',
-//   category: 'Fiction',
-// }
+export const deleteBookAsync = createAsyncThunk('books/removeBook', async (id) => {
+  try {
+    await axios.delete(`${url}${urlId}/books/${id}`);
+  } catch (error) {
+    throw new Error(error);
+  }
+  return id;
+});
 
 // {
 //   item_id: 'item1',
@@ -59,22 +49,19 @@ const initialState = {
 const booksSlice = createSlice({
   name: 'books',
   initialState,
-  reducers: {
-    removeBook: (state, action) => {
-      state.books = state.books.filter(
-        (book) => book.item_id !== action.payload,
-      );
-    },
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder.addCase(getBooks.fulfilled, (state, action) => {
       state.books = action.payload;
     });
-    // builder.addCase(deleteBookAsync.fulfilled, (state, action) => {
-    //   state.books = state.books.filter(
-    //     (book) => book.item_id !== action.payload,
-    //   );
-    // });
+    builder.addCase(deleteBookAsync.fulfilled, (state, action) => {
+      state.books = state.books.filter(
+        (book) => book.item_id !== action.payload,
+      );
+    });
+    builder.addCase(addBook.fulfilled, (state, action) => {
+      state.books.push(action.payload);
+    });
   },
 });
 
