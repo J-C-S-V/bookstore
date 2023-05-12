@@ -1,13 +1,23 @@
 @import 'global-styles';
 
+hr {
+  margin: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin: 1rem;
+}
+
 .form__h2 {
   color: map-get($colors, faded-text);
-  margin-left: 2.3rem;
 }
 
 .form__form {
   display: flex;
-  justify-content: space-around;
+  gap: 3rem;
 }
 
 .form__input,
@@ -19,7 +29,7 @@
 }
 
 .form__input {
-  min-width: 20rem;
+  width: 15rem;
 }
 
 .form__button {
